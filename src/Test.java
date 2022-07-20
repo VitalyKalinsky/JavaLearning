@@ -39,5 +39,7 @@ public class Test {
         arr[index] = el;
     }
 
-    
+    static int get(int[] arr, int index) {
+        return arr[index];
+    }
 }
