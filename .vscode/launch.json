@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ArrayLN",
+            "request": "launch",
+            "mainClass": "ArrayLN",
+            "projectName": "javalearnin_92d822c1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "javalearnin_92d822c1"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "FactoryMethod.Main",
