@@ -1,12 +1,14 @@
+package projects.dataStructures;
+
 import java.util.Arrays;
 
 public class ArrayLN {
-    private int[] array;
+    private static int[] array;
 
     public static void main(String[] args) {
         ArrayLN arrayLN = new ArrayLN(10, false);
-        arrayLN.selectionSort();
-        arrayLN.printArray();
+        arrayLN.insertSort();
+        printArray(array);
     }
 
     // constructor
@@ -19,27 +21,14 @@ public class ArrayLN {
             this.bubbleSort();
     }
 
-    // formulas
-    int log(int base, int arg) {
-        if (base != arg)
-            return log(base, arg, 1);
-        return 1;
-    }
-
-    private int log(int base, int arg, int s) {
-        if ((int) Math.pow(base, s) != arg)
-            return log(base, arg, s + 1);
-        else
-            return s;
-    }
-
+    // help-functions
     void swap(int a, int b) {
         int temp = array[a];
         array[a] = array[b];
         array[b] = temp;
     }
 
-    void printArray() {
+    static void printArray(int[] array) {
         System.out.println(Arrays.toString(array));
     }
 
@@ -130,6 +119,19 @@ public class ArrayLN {
                 }
             }
             swap(out, min);
+        }
+    }
+
+    void insertSort() {
+        int temp, in;
+        for (int out = 1; out < array.length; out++) {
+            temp = array[out];
+            in=out;
+            while(in > 0 && array[in - 1] >= temp){
+                array[in] = array[in-1];
+                in--;
+            }
+            array[in] = temp;
         }
     }
 }

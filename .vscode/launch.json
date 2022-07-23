@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch ArrayLN",
             "request": "launch",
+            "mainClass": "projects.dataStructures.ArrayLN",
+            "projectName": "javalearnin_92d822c1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayLN",
+            "request": "launch",
             "mainClass": "ArrayLN",
             "projectName": "javalearnin_92d822c1"
         },
