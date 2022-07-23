@@ -4,36 +4,31 @@ import java.util.Arrays;
 
 public class ArrayLN {
     private static int[] array;
-
-    public static void main(String[] args) {
-        ArrayLN arrayLN = new ArrayLN(10, false);
-        arrayLN.insertSort();
-        printArray(array);
-    }
+    private static int nElems = 0;
 
     // constructor
     public ArrayLN(int length, boolean isSorted) {
         array = new int[length];
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) Math.round(Math.random() * 100);
+            insert((int) Math.round(Math.random() * 100), i);
         }
         if (isSorted)
             this.bubbleSort();
     }
 
     // help-functions
-    void swap(int a, int b) {
-        int temp = array[a];
-        array[a] = array[b];
-        array[b] = temp;
+    public void swap(int index1, int index2) {
+        int temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
     }
 
-    static void printArray(int[] array) {
+    public void printArray() {
         System.out.println(Arrays.toString(array));
     }
 
     // search
-    int search(int el) {
+    public int search(int el) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == el)
                 return i;
@@ -42,7 +37,7 @@ public class ArrayLN {
     }
 
     // delete
-    void del(int el) {
+    public void del(int el) {
         int index = search(el);
         array[index] = 0;
         try {
@@ -54,21 +49,20 @@ public class ArrayLN {
     }
 
     // add
-    void addIn(int el, int index) {
+    public void insert(int el, int index) {
         for (int i = array.length - 1; i > index; i--) {
-            System.out.println(Arrays.toString(array));
-            System.out.println("yes");
             array[i] = array[i - 1];
         }
         array[index] = el;
+        nElems++;
     }
 
     // get
-    int get(int index) {
+    public int get(int index) {
         return array[index];
     }
 
-    int getMax() {
+    public int getMax() {
         int max = 0;
         for (int i : array) {
             if (i > max)
@@ -78,7 +72,7 @@ public class ArrayLN {
     }
 
     // search
-    int binarySearch(int el) {
+    public int binarySearch(int el) {
         int curIndex = 0;
         int down = 0;
         int up = array.length - 1;
@@ -99,7 +93,7 @@ public class ArrayLN {
     }
 
     // sort
-    void bubbleSort() {
+    public void bubbleSort() {
         for (int out = array.length - 1; out > 0; out--) {
             for (int in = 0; in < out; in++) {
                 if (array[in] > array[in + 1]) {
@@ -109,7 +103,7 @@ public class ArrayLN {
         }
     }
 
-    void selectionSort() {
+    public void selectionSort() {
         int min;
         for (int out = 0; out < array.length - 1; out++) {
             min = out;
@@ -122,13 +116,14 @@ public class ArrayLN {
         }
     }
 
-    void insertSort() {
+    //4, 3, 2, 5, 1
+    public void insertSort() {
         int temp, in;
         for (int out = 1; out < array.length; out++) {
             temp = array[out];
-            in=out;
+            in = out;
             while(in > 0 && array[in - 1] >= temp){
-                array[in] = array[in-1];
+                array[in] = array[in - 1];
                 in--;
             }
             array[in] = temp;
