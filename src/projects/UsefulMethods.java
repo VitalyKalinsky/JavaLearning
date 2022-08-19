@@ -37,4 +37,13 @@ public class UsefulMethods {
 		}
 		return marks;		
 	}
+
+    public static String translateDecToBin(int dec){
+        String binNum = "";
+        while(dec != 0){
+            binNum = dec % 2 + binNum;
+            dec /= 2;
+        }
+        return binNum;
+    }
 }
