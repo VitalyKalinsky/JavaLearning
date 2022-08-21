@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package projects;
 
 import java.nio.ByteBuffer;
@@ -10,16 +11,17 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 public class Test {
-    static String fileName = "src/projects/test.txt";
+    static String fileName = "src/projects/QuadraticEquation.java";
 
-    public static void main(String[] args) throws IOException {
-        copyByNIO(fileName, "src/projects/test2.txt");
+    public static void main(String[] args){
+        String test = "src/projects/quadratic.txt";
+        copyByNIO(fileName, test);
     }
 
     public static void copyByIO(String from, String to) {
         int ch;
         try (FileInputStream fileFrom = new FileInputStream(from);
-                FileOutputStream fileTo = new FileOutputStream(to)) {
+             FileOutputStream fileTo = new FileOutputStream(to)) {
             while ((ch = fileFrom.read()) != -1)
                 fileTo.write((char) ch);
         } catch (IOException e) {
@@ -27,19 +29,37 @@ public class Test {
         }
     }
 
-    public static void copyByNIO(String from, String to) throws IOException{
-        RandomAccessFile file = new RandomAccessFile(from, "r");
-        FileChannel channel = file.getChannel();
-
-        ByteBuffer buffer = ByteBuffer.allocate(1024);
-        int length = channel.read(buffer);
-        
-        while(length > 0){
-            buffer.flip();
-            while(buffer.hasRemaining()){
-                channel.write(buffer);
+    public static void copyByNIO(String from, String to){
+        try (RandomAccessFile fileFrom = new RandomAccessFile(from, "rw");
+             RandomAccessFile fileTo = new RandomAccessFile(to, "rw");
+             FileChannel inChannel = fileFrom.getChannel();
+             FileChannel outChannel = fileTo.getChannel()) {
+            ByteBuffer buffer = ByteBuffer.allocate((int)fileFrom.length());
+            int length = inChannel.read(buffer);
+            if(length > 0) {
+                buffer.flip();
+                outChannel.write(buffer);
             }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         }
-        
     }
 }
+=======
+package projects;
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.println(translateDecToBin(255));
+    }
+
+    public static String translateDecToBin(int dec){
+        String binNum = "";
+        while(dec != 0){
+            binNum = dec % 2 + binNum;
+            dec /= 2;
+        }
+        return binNum;
+    }
+}
+>>>>>>> 9d83303b5bdd14d625525496820d5b6b4f0cf50a
