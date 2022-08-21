@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package projects;
 
 import java.nio.ByteBuffer;
@@ -46,6 +47,8 @@ public class Test {
     }
 }
 =======
+=======
+>>>>>>> 9d83303b5bdd14d625525496820d5b6b4f0cf50a
 package projects;
 
 public class Test {
@@ -62,4 +65,7 @@ public class Test {
         return binNum;
     }
 }
+<<<<<<< HEAD
+>>>>>>> 9d83303b5bdd14d625525496820d5b6b4f0cf50a
+=======
 >>>>>>> 9d83303b5bdd14d625525496820d5b6b4f0cf50a
