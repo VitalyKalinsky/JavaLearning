@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch QuadraticEquation",
+            "request": "launch",
+            "mainClass": "projects.QuadraticEquation",
+            "projectName": "JavaLearning_d5d1ee06"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "projects.javaNIO.Main",
+            "projectName": "JavaLearning_d5d1ee06"
+        },
+        {
+            "type": "java",
             "name": "Launch Test",
             "request": "launch",
             "mainClass": "projects.Test",
