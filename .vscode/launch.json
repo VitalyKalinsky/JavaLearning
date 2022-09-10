@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TimetableGen",
+            "request": "launch",
+            "mainClass": "projects.school.TimetableGen",
+            "projectName": "JavaLearning_d5d1ee06"
+        },
+        {
+            "type": "java",
+            "name": "Launch timetableGen",
+            "request": "launch",
+            "mainClass": "projects.school.timetableGen",
+            "projectName": "JavaLearning_d5d1ee06"
+        },
+        {
+            "type": "java",
+            "name": "Launch estimateGen",
+            "request": "launch",
+            "mainClass": "projects.school.estimateGen",
+            "projectName": "JavaLearning_d5d1ee06"
+        },
+        {
+            "type": "java",
             "name": "Launch QuadraticEquation",
             "request": "launch",
             "mainClass": "projects.QuadraticEquation",

@@ -1,4 +1,4 @@
-package projects;
+package projects.school;
 import java.util.Scanner;
 
 public class QuadraticEquation {

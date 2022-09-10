@@ -1,5 +1,7 @@
-package projects;
+package projects.school;
 import java.util.*;
+
+import projects.UsefulMethods;
 
 public class Marks {
     public static void markCounter() {

@@ -16,7 +16,10 @@ public class UsefulMethods {
             return s;
     }
 
-    // factorial
+    /**
+    *Returns the factorial of the f
+    *@param f the number to get a factorial
+    */
     public static int getFactorial(int f) {
         int result = 1;
         for (int i = 1; i <= f; i++)
