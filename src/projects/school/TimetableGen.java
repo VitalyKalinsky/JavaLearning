@@ -15,6 +15,7 @@ public class TimetableGen {
     }
 
     static void printTimetable() {
+
         if (currentDate.get(Calendar.DAY_OF_WEEK) >= 7) {
             day = 0;
             currentDate.set(Calendar.DAY_OF_MONTH, currentDate.get(Calendar.DAY_OF_MONTH) + 2);
