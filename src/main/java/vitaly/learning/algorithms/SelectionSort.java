@@ -1,4 +1,4 @@
-package projects.algorithms;
+package vitaly.learning.algorithms;
 
 public class SelectionSort {
     private final int[] array;

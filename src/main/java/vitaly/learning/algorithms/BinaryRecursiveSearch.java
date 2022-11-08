@@ -1,4 +1,4 @@
-package projects.algorithms;
+package vitaly.learning.algorithms;
 
 public class BinaryRecursiveSearch {
     private final int[] array;

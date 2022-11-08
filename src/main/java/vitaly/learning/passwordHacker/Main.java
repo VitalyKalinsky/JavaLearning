@@ -1,4 +1,4 @@
-package projects.passwordHacker;
+package vitaly.learning.passwordHacker;
 
 public class Main {
     public static String password = "dfgd";

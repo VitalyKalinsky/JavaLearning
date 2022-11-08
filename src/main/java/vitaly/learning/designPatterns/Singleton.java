@@ -1,4 +1,4 @@
-package projects.designPatterns;
+package vitaly.learning.designPatterns;
 
 public class Singleton {
 	public static Singleton _instance = null;

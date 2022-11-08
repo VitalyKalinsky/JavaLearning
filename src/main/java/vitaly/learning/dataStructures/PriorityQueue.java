@@ -1,4 +1,4 @@
-package projects.dataStructures;
+package vitaly.learning.dataStructures;
 
 import java.util.Arrays;
 

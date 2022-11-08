@@ -1,4 +1,4 @@
-package projects.dataStructures;
+package vitaly.learning.dataStructures;
 
 public class BinaryTree {
     private Node root = null;

@@ -1,7 +1,7 @@
-package projects.school;
+package vitaly.learning.school;
 import java.util.*;
 
-import projects.UsefulMethods;
+import vitaly.learning.UsefulMethods;
 
 public class Marks {
     public static void markCounter() {

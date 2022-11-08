@@ -1,4 +1,4 @@
-package projects.school;
+package vitaly.learning.school;
 import java.util.Scanner;
 
 public class QuadraticEquation {

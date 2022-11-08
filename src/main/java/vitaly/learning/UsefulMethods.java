@@ -1,4 +1,4 @@
-package projects;
+package vitaly.learning;
 import java.util.*;
 
 public class UsefulMethods {

@@ -1,4 +1,4 @@
-package projects.algorithms;
+package vitaly.learning.algorithms;
 
 public class ShellSort {
     private final int[] array;

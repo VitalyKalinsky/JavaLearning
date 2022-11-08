@@ -1,4 +1,4 @@
-package projects.algorithms;
+package vitaly.learning.algorithms;
 
 public class MergeSort {
     private final int[] array;

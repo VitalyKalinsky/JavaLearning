@@ -1,4 +1,4 @@
-package projects.algorithms;
+package vitaly.learning.algorithms;
 
 public class LineSearch {
     private final int[] array;

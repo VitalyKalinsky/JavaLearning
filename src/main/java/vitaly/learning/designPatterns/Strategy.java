@@ -1,4 +1,4 @@
-package projects.designPatterns;
+package vitaly.learning.designPatterns;
 
 public class Strategy {
     public static void main(String[] args) {

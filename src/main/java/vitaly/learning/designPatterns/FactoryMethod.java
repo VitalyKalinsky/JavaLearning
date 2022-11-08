@@ -1,4 +1,4 @@
-package projects.designPatterns;
+package vitaly.learning.designPatterns;
 class FactoryMethod{
     public OS getCurrentOS(String inputos) {
         OS os = null;

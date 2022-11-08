@@ -1,4 +1,4 @@
-package projects.javaNIO;
+package vitaly.learning.javaNIO;
 
 
 public class Main {

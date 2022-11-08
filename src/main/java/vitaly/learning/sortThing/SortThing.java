@@ -1,4 +1,4 @@
-package projects.sortThing;
+package vitaly.learning.sortThing;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
