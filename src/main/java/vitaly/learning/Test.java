@@ -1,11 +1,11 @@
 package vitaly.learning;
 
-import java.net.Socket;
-import java.net.ServerSocket;
+import java.io.*;
+import java.rmi.AlreadyBoundException;
 
 public class Test {
 
-    public static void main(String[] args) throws NoSuchMethodException {
-
+    public static void main(String[] args) throws IOException, AlreadyBoundException, InterruptedException {
+        
     }
 }
